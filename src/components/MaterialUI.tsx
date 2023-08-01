@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, makeStyles } from "@material-ui/core"
+import { Button, makeStyles, Typography } from "@material-ui/core"
 
 const useStyles = makeStyles({
     btnStyle: {
@@ -12,6 +12,7 @@ const MaterialUI : React.FC = () => {
     const classes = useStyles()
   return (
     <div>
+        <Typography>Hello Material UI</Typography>
         <Button className={classes.btnStyle} variant='contained' color="secondary">Button</Button>
     </div>
   )
