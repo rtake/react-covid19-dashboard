@@ -6,13 +6,23 @@ const useStyles = makeStyles({
         background: "green",
         padding: "3px 50px",
     },
+    typoStyle: {
+        color: "blue",
+    },
 })
 
 const MaterialUI : React.FC = () => {
     const classes = useStyles()
   return (
     <div>
-        <Typography>Hello Material UI</Typography>
+        <Typography
+            className={classes.typoStyle}
+            color='secondary' 
+            variant='h4' 
+            align='left' 
+            gutterBottom={true} 
+            noWrap={true}
+        >Hello Material UI</Typography>
         <Button className={classes.btnStyle} variant='contained' color="secondary">Button</Button>
     </div>
   )
