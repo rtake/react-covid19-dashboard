@@ -53,7 +53,26 @@ const MaterialUI : React.FC = () => {
                 <Paper className={classes.paperStyle}>xs=3</Paper>
             </Grid>
         </Grid>
+
         <Button className={classes.btnStyle} variant='contained' color="secondary">Button</Button>
+
+        <Grid
+            container
+            direction='column'
+            justifyContent='center'
+            alignItems="flex-end" 
+            spacing={2}
+        >
+            <Grid item xs={1}>
+                <Paper className={classes.paperStyle}>xs=1</Paper>
+            </Grid>
+            <Grid item xs={1}>
+                <Paper className={classes.paperStyle}>xs=1</Paper>
+            </Grid>
+            <Grid item xs={1}>
+                <Paper className={classes.paperStyle}>xs=1</Paper>
+            </Grid>
+        </Grid>
     </div>
   )
 }
