@@ -10,11 +10,11 @@ import BubblePlot from './components/BubblePlot';
 function App() {
   return (
     <div className="App">
-      <LinePlot />
+      {/* <LinePlot />
       <PiePlot />
       <BarPlot />
       <RadarPlot />
-      <BubblePlot />
+      <BubblePlot /> */}
     </div>
   );
 }
